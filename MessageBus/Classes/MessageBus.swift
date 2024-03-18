@@ -23,15 +23,14 @@ public class MessageBus {
     }
 }
 
+// 正常的消息
 public extension MessageBus {
-    // 发送消息
     func send<T>(_ message: T) {
         let name = NSNotification.Name(String(describing: T.self))
         let notification = Notification(name: name, object: nil, userInfo: ["message": message])
         NotificationCenter.default.post(notification)
     }
 
-    // 接收消息
     func addListener<T>(_ handler: @escaping (_ message: T) -> Void, subscriber: MessageSubscriber) {
         let name = NSNotification.Name(String(describing: T.self))
         subscriber.observers.append(NotificationCenter.default.addObserver(forName: name, object: nil, queue: .main) { notification in
@@ -42,13 +41,27 @@ public extension MessageBus {
     }
 }
 
+// 带ID的消息，
 public extension MessageBus {
-    // 发送一个消息并监听回调
+    func send<T>(_ identifier: String, message: T) {
+        send(IdentifierMessage(identifier: identifier, message: message))
+    }
+
+    func addListener<T>(_ identifier: String, handler: @escaping (_ message: T) -> Void, subscriber: MessageSubscriber) {
+        addListener({ (message: IdentifierMessage<T>) in
+            if message.identifier == identifier {
+                handler(message.message)
+            }
+        }, subscriber: subscriber)
+    }
+}
+
+// 带回调的消息
+public extension MessageBus {
     func send<Input, Output>(_ message: Input, completion: @escaping ((Output) -> Void)) {
         send(CallbackMessage(data: message, completion: completion))
     }
 
-    // 监听一个消息，并返回数据
     func addListener<Input, Output>(_ handler: @escaping (_ data: Input, _ completion: (Output) -> Void) -> Void, subscriber: MessageSubscriber) {
         addListener({ (message: CallbackMessage<Input, Output>) in
             handler(message.data, message.completion)

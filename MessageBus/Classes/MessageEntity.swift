@@ -12,3 +12,9 @@ public struct CallbackMessage<Input, Output> {
     let data: Input
     let completion: (Output) -> ()
 }
+
+// 通用的消息
+public struct IdentifierMessage<T> {
+    let identifier: String
+    let message: T
+}

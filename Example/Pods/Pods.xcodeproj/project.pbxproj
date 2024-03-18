@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2AB5F079278B41A3A7EF866DF5FA1CF9 /* MessageBus-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AC39E64F6E654162A144E4DE13FB008 /* MessageBus-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2AB5F079278B41A3A7EF866DF5FA1CF9 /* MessageBus-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B21E707257F185F64F8C508E67F8F4C /* MessageBus-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2DA4D7386EF6607DA16A58C865A3FF27 /* MessageBus-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AACE8FB6A189A1C7610E09E34538AEE /* MessageBus-dummy.m */; };
 		3621471FBA42E6E64F6DFEFB1CE8A51C /* Pods-MessageBus_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FA1FDCFEF6AE91AFC6D8F67D0ECE4A /* Pods-MessageBus_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3E882BA8B2AB324B49F5B59AB93FDCAB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		5A10D55855C3FF319C5DD7551B493667 /* MessageBus.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9888ED5FA3715E4D3936B20F12B0C85 /* MessageBus.swift */; };
 		5C55E031C760BC8917A9107220B9C8CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		609119E57AC59A814926D6CFA87FD402 /* Pods-MessageBus_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FDF6A523B5B77E13C0490BE4F9CF855 /* Pods-MessageBus_Example-dummy.m */; };
-		61DFEAB51F459372A519CE499167F7DA /* MessageBus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C48CE10D7ECFBE634E82656B845EC6A /* MessageBus.swift */; };
-		A39BDFED44A49F9CF24F3E54AB2230EC /* MessageEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E059B7B37A6BBA488896A541672DBDD2 /* MessageEntity.swift */; };
-		E05BFB25D0852388453C572CDE2FF0FD /* MessageBus-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E1D7E96F71B6244668236EFDA9B17E3B /* MessageBus-dummy.m */; };
+		B271AFC4F9F51D3C41425D0879F88B78 /* MessageEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7222BB9D35C91184162EED2BF2EE24 /* MessageEntity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,31 +28,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0CB0297594067714C371F38BE021BE22 /* MessageBus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MessageBus.debug.xcconfig; sourceTree = "<group>"; };
 		1309B9CEE3C3225161399CD85EADFE2B /* Pods-MessageBus_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MessageBus_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		1EBBBC3DDB40E7B8B96CD0102AD99E1B /* MessageBus-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MessageBus-prefix.pch"; sourceTree = "<group>"; };
-		2AC39E64F6E654162A144E4DE13FB008 /* MessageBus-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MessageBus-umbrella.h"; sourceTree = "<group>"; };
+		1B21E707257F185F64F8C508E67F8F4C /* MessageBus-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MessageBus-umbrella.h"; sourceTree = "<group>"; };
+		2AACE8FB6A189A1C7610E09E34538AEE /* MessageBus-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MessageBus-dummy.m"; sourceTree = "<group>"; };
+		34F6746B5DB4685E01342AF0450C9B14 /* MessageBus-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MessageBus-prefix.pch"; sourceTree = "<group>"; };
 		354736C1F34CB4028A06DC41988A7551 /* Pods-MessageBus_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MessageBus_Example.modulemap"; sourceTree = "<group>"; };
+		3846F662655DE085D1883A7F9C7F38FE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		3EE56ADC7E1570DD8FC657F0D2F2A339 /* Pods-MessageBus_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MessageBus_Example-Info.plist"; sourceTree = "<group>"; };
+		41CEFDFF1D6440C980B70E721F958BC9 /* MessageBus.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = MessageBus.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		4BBD80A52FAEAC2F21A2BDAFC4D35A62 /* Pods-MessageBus_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MessageBus_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		5C48CE10D7ECFBE634E82656B845EC6A /* MessageBus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageBus.swift; path = MessageBus/Classes/MessageBus.swift; sourceTree = "<group>"; };
-		60DD37A53579C210B7543A10BAF4888A /* MessageBus.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = MessageBus.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		6124B02B5AC9C78CF80CCC0493D378ED /* MessageBus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MessageBus.release.xcconfig; sourceTree = "<group>"; };
 		63964A538647057EB115072D44DCC1CA /* MessageBus */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MessageBus; path = MessageBus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6405C56D8F2E573951B8947356676D42 /* MessageBus.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MessageBus.modulemap; sourceTree = "<group>"; };
 		6FDF6A523B5B77E13C0490BE4F9CF855 /* Pods-MessageBus_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MessageBus_Example-dummy.m"; sourceTree = "<group>"; };
+		7177BF3D48AFE90455557A0E085A2479 /* MessageBus-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MessageBus-Info.plist"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		80730E7ABD0B947CC5F80993A84EEF9C /* MessageBus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MessageBus.release.xcconfig; sourceTree = "<group>"; };
 		84FA1FDCFEF6AE91AFC6D8F67D0ECE4A /* Pods-MessageBus_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MessageBus_Example-umbrella.h"; sourceTree = "<group>"; };
-		94199CB2B4B6685B4E48B13FF8B8CAD8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E337E98CA9771732C6FF5F7EE503E6B /* MessageBus.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MessageBus.modulemap; sourceTree = "<group>"; };
+		B12A9A90E19E06A2F50AFCF56B508F61 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		B4915CDD18E55D540949207C127AE350 /* Pods-MessageBus_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MessageBus_Example-frameworks.sh"; sourceTree = "<group>"; };
+		B9888ED5FA3715E4D3936B20F12B0C85 /* MessageBus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageBus.swift; path = MessageBus/Classes/MessageBus.swift; sourceTree = "<group>"; };
 		BB2514CBE75E3744BFD3C30531343865 /* Pods-MessageBus_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MessageBus_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		C1E02D7A832DBF7A9934D9EE083EE733 /* Pods-MessageBus_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MessageBus_Example.release.xcconfig"; sourceTree = "<group>"; };
-		C3C8A3358A904F17DF4FA8FD0D2BF681 /* MessageBus-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MessageBus-Info.plist"; sourceTree = "<group>"; };
-		CF1281C2D437160A6DD7D7EC669B1207 /* MessageBus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MessageBus.debug.xcconfig; sourceTree = "<group>"; };
 		DDD9E8FDCED3A02AEC760FF945F6FDE1 /* Pods-MessageBus_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-MessageBus_Example"; path = Pods_MessageBus_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E059B7B37A6BBA488896A541672DBDD2 /* MessageEntity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageEntity.swift; path = MessageBus/Classes/MessageEntity.swift; sourceTree = "<group>"; };
-		E1D7E96F71B6244668236EFDA9B17E3B /* MessageBus-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MessageBus-dummy.m"; sourceTree = "<group>"; };
-		FF8854D7FDD3928911B4BA2029BD39A0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		FD7222BB9D35C91184162EED2BF2EE24 /* MessageEntity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageEntity.swift; path = MessageBus/Classes/MessageEntity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,31 +75,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00A5B7AA4F7D692BB9B2A6597FF525D9 /* Support Files */ = {
+		236BBDE599DECD816C300AE5BBF658F8 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				6405C56D8F2E573951B8947356676D42 /* MessageBus.modulemap */,
-				E1D7E96F71B6244668236EFDA9B17E3B /* MessageBus-dummy.m */,
-				C3C8A3358A904F17DF4FA8FD0D2BF681 /* MessageBus-Info.plist */,
-				1EBBBC3DDB40E7B8B96CD0102AD99E1B /* MessageBus-prefix.pch */,
-				2AC39E64F6E654162A144E4DE13FB008 /* MessageBus-umbrella.h */,
-				CF1281C2D437160A6DD7D7EC669B1207 /* MessageBus.debug.xcconfig */,
-				80730E7ABD0B947CC5F80993A84EEF9C /* MessageBus.release.xcconfig */,
+				9E337E98CA9771732C6FF5F7EE503E6B /* MessageBus.modulemap */,
+				2AACE8FB6A189A1C7610E09E34538AEE /* MessageBus-dummy.m */,
+				7177BF3D48AFE90455557A0E085A2479 /* MessageBus-Info.plist */,
+				34F6746B5DB4685E01342AF0450C9B14 /* MessageBus-prefix.pch */,
+				1B21E707257F185F64F8C508E67F8F4C /* MessageBus-umbrella.h */,
+				0CB0297594067714C371F38BE021BE22 /* MessageBus.debug.xcconfig */,
+				6124B02B5AC9C78CF80CCC0493D378ED /* MessageBus.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/MessageBus";
-			sourceTree = "<group>";
-		};
-		2BF74A7F611EA9218C3EE686F6936F19 /* MessageBus */ = {
-			isa = PBXGroup;
-			children = (
-				E059B7B37A6BBA488896A541672DBDD2 /* MessageEntity.swift */,
-				5C48CE10D7ECFBE634E82656B845EC6A /* MessageBus.swift */,
-				3338EC7F03EC98B90D14949C871AE573 /* Pod */,
-				00A5B7AA4F7D692BB9B2A6597FF525D9 /* Support Files */,
-			);
-			name = MessageBus;
-			path = ../..;
 			sourceTree = "<group>";
 		};
 		3224D73EEB7FC9CEB96BFCB63325F19B /* Pods-MessageBus_Example */ = {
@@ -119,14 +107,16 @@
 			path = "Target Support Files/Pods-MessageBus_Example";
 			sourceTree = "<group>";
 		};
-		3338EC7F03EC98B90D14949C871AE573 /* Pod */ = {
+		35A91348C3A0F4BF87E7D6696CCC4D47 /* MessageBus */ = {
 			isa = PBXGroup;
 			children = (
-				FF8854D7FDD3928911B4BA2029BD39A0 /* LICENSE */,
-				60DD37A53579C210B7543A10BAF4888A /* MessageBus.podspec */,
-				94199CB2B4B6685B4E48B13FF8B8CAD8 /* README.md */,
+				B9888ED5FA3715E4D3936B20F12B0C85 /* MessageBus.swift */,
+				FD7222BB9D35C91184162EED2BF2EE24 /* MessageEntity.swift */,
+				7128FBF81FAF8CFF36A215136C8FAEC9 /* Pod */,
+				236BBDE599DECD816C300AE5BBF658F8 /* Support Files */,
 			);
-			name = Pod;
+			name = MessageBus;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -137,10 +127,20 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		7128FBF81FAF8CFF36A215136C8FAEC9 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				3846F662655DE085D1883A7F9C7F38FE /* LICENSE */,
+				41CEFDFF1D6440C980B70E721F958BC9 /* MessageBus.podspec */,
+				B12A9A90E19E06A2F50AFCF56B508F61 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
 		BFBD79FB3607BD7E7523A989C4516E39 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				2BF74A7F611EA9218C3EE686F6936F19 /* MessageBus */,
+				35A91348C3A0F4BF87E7D6696CCC4D47 /* MessageBus */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -227,7 +227,7 @@
 			buildConfigurationList = BD57D4730FC9F4F79B9DDD20367F3BE4 /* Build configuration list for PBXNativeTarget "MessageBus" */;
 			buildPhases = (
 				574934727AEC71BA5F8658B8592107C6 /* Headers */,
-				DF8CE2DA0150BF8A2A9BF71BF2F11E73 /* Sources */,
+				EEB926F2A26990A80AA79D8D650FA353 /* Sources */,
 				D51841EAF4ACA74550BC8784FE990907 /* Frameworks */,
 				3516B655DC11028A5F8687F648F73BBB /* Resources */,
 			);
@@ -286,21 +286,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		DF8CE2DA0150BF8A2A9BF71BF2F11E73 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A39BDFED44A49F9CF24F3E54AB2230EC /* MessageEntity.swift in Sources */,
-				61DFEAB51F459372A519CE499167F7DA /* MessageBus.swift in Sources */,
-				E05BFB25D0852388453C572CDE2FF0FD /* MessageBus-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		E0384498770358217EA9306E6AC0CE78 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				609119E57AC59A814926D6CFA87FD402 /* Pods-MessageBus_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEB926F2A26990A80AA79D8D650FA353 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A10D55855C3FF319C5DD7551B493667 /* MessageBus.swift in Sources */,
+				2DA4D7386EF6607DA16A58C865A3FF27 /* MessageBus-dummy.m in Sources */,
+				B271AFC4F9F51D3C41425D0879F88B78 /* MessageEntity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,7 +404,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -512,7 +513,7 @@
 		};
 		E7DAF7B08B1A32BA5D71A7C9C2B7181C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 80730E7ABD0B947CC5F80993A84EEF9C /* MessageBus.release.xcconfig */;
+			baseConfigurationReference = 6124B02B5AC9C78CF80CCC0493D378ED /* MessageBus.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -544,7 +545,7 @@
 		};
 		EAC36C5707F5F6FD67591EE06B2E3925 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CF1281C2D437160A6DD7D7EC669B1207 /* MessageBus.debug.xcconfig */;
+			baseConfigurationReference = 0CB0297594067714C371F38BE021BE22 /* MessageBus.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
