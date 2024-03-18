@@ -1,0 +1,16 @@
+PODS:
+  - MessageBus (1.0.0)
+
+DEPENDENCIES:
+  - MessageBus (from `../`)
+
+EXTERNAL SOURCES:
+  MessageBus:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MessageBus: 05bfcaff86fa3c364efaca5d2e7a4718f3d08433
+
+PODFILE CHECKSUM: 7e62c093d90dc377c1c1056a349731bbcaca760d
+
+COCOAPODS: 1.14.3

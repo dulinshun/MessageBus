@@ -1,5 +1,4 @@
 import XCTest
-import MessageBus
 
 class Tests: XCTestCase {
     

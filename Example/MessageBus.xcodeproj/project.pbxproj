@@ -14,6 +14,9 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		E532D3F82BA83EAA0017A461 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E532D3F72BA83EA90017A461 /* ViewController2.swift */; };
+		E532D3FA2BA83F6E0017A461 /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = E532D3F92BA83F6E0017A461 /* ViewController3.swift */; };
+		E532D3FC2BA841720017A461 /* UIColor+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = E532D3FB2BA841720017A461 /* UIColor+Random.swift */; };
 		E678B66237337D508D2B700F /* Pods_MessageBus_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBD3280D1CA38359D3AC9F32 /* Pods_MessageBus_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,11 +45,14 @@
 		607FACE51AFB9204008FA782 /* MessageBus_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MessageBus_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		7EA30E67185CA007D0DCBDDA /* MessageBus.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = MessageBus.podspec; path = ../MessageBus.podspec; sourceTree = "<group>"; };
-		A8148749BC86B069585689D8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		7EA30E67185CA007D0DCBDDA /* MessageBus.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MessageBus.podspec; path = ../MessageBus.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A8148749BC86B069585689D8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		CBD3280D1CA38359D3AC9F32 /* Pods_MessageBus_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MessageBus_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D15BC86B8462D0080D0B9040 /* Pods-MessageBus_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessageBus_Example.debug.xcconfig"; path = "Target Support Files/Pods-MessageBus_Example/Pods-MessageBus_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		FA470B7259668B38B8632C30 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		E532D3F72BA83EA90017A461 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		E532D3F92BA83F6E0017A461 /* ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
+		E532D3FB2BA841720017A461 /* UIColor+Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Random.swift"; sourceTree = "<group>"; };
+		FA470B7259668B38B8632C30 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +101,9 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				E532D3F72BA83EA90017A461 /* ViewController2.swift */,
+				E532D3F92BA83F6E0017A461 /* ViewController3.swift */,
+				E532D3FB2BA841720017A461 /* UIColor+Random.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -147,7 +156,6 @@
 				04E87D1DC3D9CA71A0D9FF1E /* Pods-MessageBus_Tests.debug.xcconfig */,
 				29772D83239E613A25F28508 /* Pods-MessageBus_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +235,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -331,8 +340,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E532D3FC2BA841720017A461 /* UIColor+Random.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				E532D3FA2BA83F6E0017A461 /* ViewController3.swift in Sources */,
+				E532D3F82BA83EAA0017A461 /* ViewController2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,6 +491,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MessageBus/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -494,6 +507,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MessageBus/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
