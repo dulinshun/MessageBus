@@ -23,7 +23,7 @@ public class MessageBus {
     }
 }
 
-// 正常的消息
+// 基础消息操作
 public extension MessageBus {
     func send<T>(_ message: T) {
         let name = NSNotification.Name(String(describing: T.self))
@@ -41,7 +41,7 @@ public extension MessageBus {
     }
 }
 
-// 带ID的消息，
+// 带ID的消息，可以方便区分
 public extension MessageBus {
     func send<T>(_ identifier: String, message: T) {
         send(IdentifierMessage(identifier: identifier, message: message))
@@ -56,7 +56,7 @@ public extension MessageBus {
     }
 }
 
-// 带回调的消息
+// 带回调的消息，可以处理回调
 public extension MessageBus {
     func send<Input, Output>(_ message: Input, completion: @escaping ((Output) -> Void)) {
         send(CallbackMessage(data: message, completion: completion))
@@ -64,6 +64,19 @@ public extension MessageBus {
 
     func addListener<Input, Output>(_ handler: @escaping (_ data: Input, _ completion: (Output) -> Void) -> Void, subscriber: MessageSubscriber) {
         addListener({ (message: CallbackMessage<Input, Output>) in
+            handler(message.data, message.completion)
+        }, subscriber: subscriber)
+    }
+}
+
+// ID + 回调
+public extension MessageBus {
+    func send<Input, Output>(_ identifier: String, message: Input, completion: @escaping ((Output) -> Void)) {
+        send(identifier, message: CallbackMessage(data: message, completion: completion))
+    }
+
+    func addListener<Input, Output>(_ identifier: String, handler: @escaping (_ data: Input, _ completion: (Output) -> Void) -> Void, subscriber: MessageSubscriber) {
+        addListener(identifier, handler: { (message: CallbackMessage<Input, Output>) in
             handler(message.data, message.completion)
         }, subscriber: subscriber)
     }
